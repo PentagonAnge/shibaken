@@ -5,6 +5,7 @@
 body {
   margin: 0;
   font-family: "Hiragino Kaku Gothic ProN";
+  width: 100%;
 }
 
 a {
@@ -206,96 +207,51 @@ header {
 }
 
 .contents {
-  padding: 20px 40px 20px 80px;
-}
-
-.contents-movie-train {
-  display: inline-block;
+  padding: 20px 10px;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .contents-movie {
-  display: inline-block;
+  display: flex;
+  flex: auto;
+  width: auto;
+  height: auto;
 }
 
-.contents-message {
-  float: right;
-  padding-right: 120px
+.contents-movie iframe {
+  width: 400px;
+  height: 250px;
 }
 
 .contents h3 {
   font-size: 60px;
-  margin-top: auto;
 }
 
 .trains {
-  height: 1700px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.tokyo {
-  height: 600px;
-}
-
-.tobu {
-  height: 600px;
-}
-
-.seibu {
-  height: 600px;
-}
-
-.train-tokyo {
-  float: left;
+.train {
+  flex: auto;
   width: 33%;
+  padding: 10px;
 }
 
-.train-tobu {
-  float: left;
-  width: 50%;
+.train img {
+  width: 100%;
 }
 
-.train-seibu {
-  float: left;
-  width: 50%;
-}
-
-.train-icon {
-  position: relative;
-  width: 33%;
-}
-
-.train-icon img {
-  height: 300px;
-}
-
-.train-name-tokyo {
-  width: 86%;
-  display: inline-block;
-  margin-top: 15px;
-  font-size: 30px;
+.train-name {
   text-align: center;
-}
-
-.train-name-tobu {
-  width: 56%;
-  display: inline-block;
-  margin-top: 15px;
-  font-size: 30px;
-  text-align: center;
-}
-
-.train-name-seibu {
-  width: 56%;
-  display: inline-block;
-  margin-top: 15px;
-  font-size: 30px;
-  text-align: center;
+  padding: 0;
+  margin: 0;
 }
 
 .text-contents {
-  width: 90%;
-  display: inline-block;
-  margin-top: 2px;
-  font-size: 16px;
+  padding: 0;
+  margin: 0;
 }
 
 .message-wrapper {
@@ -335,6 +291,11 @@ footer {
   padding: 21px 0;
   display: none;
 }
+
+.drawer {
+  display: none;
+}
+
 
 .clear {
   clear: left;
