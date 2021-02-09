@@ -1,0 +1,505 @@
+* {
+  box-sizing: border-box;
+}
+
+/*タブレット向けレイアウト*/
+@media (max-width: 1000px) {
+
+}
+
+
+
+/*スマホ向けレイアウト*/
+@media all and (max-width: 670px) {
+
+  header {
+    height: 65px;
+    width: 100%;
+    background-color: rgba(34, 49, 52, 0.9);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+  }
+
+  .container {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+
+  .top-wrapper {
+    width: 100%;
+    padding: 100px 0 60px 0;
+    background-image: url(IMG_3507.JPEG);
+    background-size: contain;
+    color: white;
+    text-align: center;
+  }
+
+  .top-wrapper h1 {
+    font-size: 80px;
+  }
+
+  .top-wrapper h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+  .header-left {
+    margin-left: 10px;
+  }
+
+  .header-list {
+    display: none;
+  }
+
+  .menu-icon {
+    color: white;
+    float: right;
+    font-size: 50px;
+    margin-right: 10px;
+    margin-top: -12px;
+    display: block;
+  }
+
+  .heading {
+    background-color: #f5f5f5;
+  }
+
+  .heading h2 {
+    padding: 20px 40px;
+    font-size: 30px;
+  }
+
+  .contents p {
+    padding: 20px 40px;
+    font-size: 20px;
+  }
+/*電光掲示板*/
+  .board {
+    background-image: url(hyouziki.PNG);
+    height: 70px;
+  }
+
+  .scroll {
+    margin : auto;
+    padding-top: 20px;
+    height     : 70px;
+    font-size  : 40px;
+    line-height: 1.0em;
+    text-align : center;
+    color      : #D88900;
+    overflow   : hidden;
+  }
+  .scroll span{
+    display     : inline-block;
+    padding-left: 100%;
+    white-space : nowrap;
+    line-height : 1em;
+    animation   : scrollAnime 25s linear infinite;
+  }
+  @keyframes scrollAnime{
+      0% { transform: translateX(0)}
+    100% { transform: translateX(-100%)}
+  }
+
+}
+
+
+/*iPhone11向けレイアウト*/
+@media all and (max-width: 414px) {
+
+  header {
+    height: 65px;
+    width: 100%;
+    background-color: rgba(34, 49, 52, 0.9);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+  }
+
+  .container {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .top-wrapper {
+    width: 100%;
+    padding: 100px 0 60px 0;
+    background-image: url(IMG_3507.JPEG);
+    background-size: contain;
+    color: white;
+    text-align: center;
+  }
+
+  .top-wrapper h1 {
+    font-size: 60px;
+  }
+
+  .top-wrapper h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+  .header-left {
+    margin-left: 10px;
+  }
+
+  .header-list {
+    display: none;
+  }
+
+  .menu-icon {
+    color: white;
+    float: right;
+    font-size: 50px;
+    margin-right: 10px;
+    margin-top: -12px;
+    display: block;
+  }
+
+  .heading {
+    background-color: #f5f5f5;
+  }
+
+  .heading h2 {
+    padding: 20px;
+    font-size: 26px;
+  }
+
+  .contents {
+    padding: 20px 10px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .contents-movie iframe {
+    width: 400px;
+    height: 250px;
+  }
+
+  .contents h3 {
+    font-size: 60px;
+  }
+  
+  .trains {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .train {
+    flex: auto;
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .train img {
+    width: 100%;
+  }
+  
+  .train-name {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .text-contents {
+    padding: 0;
+    margin: 0;
+  }
+
+  .contents-message {
+    float: none;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .contents h3 {
+    padding-top: 10px;
+    font-size: 26px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .contents p {
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+/*電光掲示板*/
+  .board {
+    background-image: url(hyouziki.PNG);
+    height: 45px;
+  }
+
+  .scroll {
+    margin : auto;
+    padding-top: 20px;
+    height     : 40px;
+    font-size  : 26px;
+    line-height: 10px;
+    text-align : center;
+    color      : #D88900;
+    overflow   : hidden;
+  }
+  .scroll span{
+    display     : inline-block;
+    padding-left: 100%;
+    white-space : nowrap;
+    line-height : 10px;
+    animation   : scrollAnime 25s linear infinite;
+  }
+  @keyframes scrollAnime{
+      0% { transform: translateX(0)}
+    100% { transform: translateX(-100%)}
+  }
+
+  /*------------------------------
+  
+    ここから下がハンバーガーメニュー
+    に関するCSS
+  
+  ------------------------------*/
+
+  .drawer {
+    display: block;
+  }
+    
+  /* チェックボックスは非表示に */
+  .drawer-hidden {
+    display: none;
+  }
+  
+  /* ハンバーガーアイコンの設置スペース */
+  .drawer-open {
+    display: flex;
+    float: right;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 100;/* 重なり順を一番上に */
+    cursor: pointer;
+  }
+  
+  /* ハンバーガーメニューのアイコン */
+  .drawer-open span,
+  .drawer-open span:before,
+  .drawer-open span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background: rgb(255, 255, 255);
+    transition: 0.5s;
+    position: absolute;
+  }
+  
+  /* 三本線のうち一番上の棒の位置調整 */
+  .drawer-open span:before {
+    bottom: 8px;
+  }
+  
+  /* 三本線のうち一番下の棒の位置調整 */
+  .drawer-open span:after {
+    top: 8px;
+  }
+  
+  /* アイコンがクリックされたら真ん中の線を透明にする */
+  #drawer-check:checked ~ .drawer-open span {
+    background: rgba(255, 255, 255, 0);
+  }
+  
+  /* アイコンがクリックされたらアイコンが×印になように上下の線を回転 */
+  #drawer-check:checked ~ .drawer-open span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+  }
+  
+  #drawer-check:checked ~ .drawer-open span::after {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+    
+  /* メニューのデザイン*/
+  .drawer-content {
+    width: 50%;
+    height: 50%;
+    position: fixed;
+    top: 0;
+    left: 100%;/* メニューを画面の外に飛ばす */
+    z-index: 99;
+    background: rgba(34, 49, 52, 0.9);
+    transition: .5s;
+  }
+  
+  /* アイコンがクリックされたらメニューを表示 */
+  #drawer-check:checked ~ .drawer-content {
+    left: 50%;/* メニューを画面に入れる */
+  }
+
+  .drawer-item {
+    padding: 10px;
+  }
+  .drawer-item a {
+    color: white;
+  }
+
+}
+
+
+
+/*iPhone6,7,8,10向けレイアウト*/
+@media all and (max-width: 375px) {
+
+  header {
+    height: 65px;
+    width: 100%;
+    background-color: rgba(34, 49, 52, 0.9);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+  }
+
+  .container {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .top-wrapper {
+    width: 100%;
+    padding: 100px 0 60px 0;
+    background-image: url(IMG_3507.JPEG);
+    background-size: contain;
+    color: white;
+    text-align: center;
+  }
+
+  .top-wrapper h1 {
+    font-size: 60px;
+  }
+
+  .top-wrapper h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .header-left {
+    margin-left: 10px;
+  }
+
+  .header-list {
+    display: none;
+  }
+
+  .menu-icon {
+    color: white;
+    float: right;
+    font-size: 50px;
+    margin-right: 10px;
+    margin-top: -12px;
+    display: block;
+  }
+
+  .heading {
+    background-color: #f5f5f5;
+  }
+
+  .heading h2 {
+    padding: 16px;
+    font-size: 22px;
+  }
+
+  .contents {
+    padding: 20px 10px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .contents h3 {
+    font-size: 60px;
+  }
+  
+  .trains {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .train {
+    flex: auto;
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .train img {
+    width: 100%;
+  }
+  
+  .train-name {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .text-contents {
+    padding: 0;
+    margin: 0;
+  }
+
+
+  .contents-message {
+    float: none;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .contents h3 {
+    padding-top: 10px;
+    font-size: 26px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .contents p {
+    padding: 16px;
+    font-size: 16px;
+  }
+/*電光掲示板*/
+  .board {
+    background-image: url(hyouziki.PNG);
+    height: 42px;
+  }
+
+  .scroll {
+    margin : auto;
+    padding-top: 18px;
+    height     : 40px;
+    font-size  : 24px;
+    line-height: 10px;
+    text-align : center;
+    color      : #D88900;
+    overflow   : hidden;
+  }
+  .scroll span{
+    display     : inline-block;
+    padding-left: 100%;
+    white-space : nowrap;
+    line-height : 8px;
+    animation   : scrollAnime 25s linear infinite;
+  }
+  @keyframes scrollAnime{
+      0% { transform: translateX(0)}
+    100% { transform: translateX(-100%)}
+  }
+
+}
