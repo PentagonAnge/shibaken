@@ -189,7 +189,7 @@ header {
 }
 
 .header-list {
-  margin-left: 540px;
+  margin-left: 70%;
 }
 
 .header-list ul:hover {
@@ -205,13 +205,22 @@ header {
   font-size: 30px;
 }
 
+.clear {
+  clear: left;
+}
+
 .contents {
   padding: 20px 80px;
+  margin: 0 auto;
 }
 
 .contents-movie {
-  display: inline-block;
+  display: flex;
+  flex: auto;
+  width: auto;
+  height: auto;
 }
+
 
 .contents-message {
   float: right;
@@ -285,6 +294,10 @@ footer {
   display: none;
 }
 
+.drawer {
+  display: none;
+}
+
 .clear {
   clear: left;
 }
@@ -304,57 +317,6 @@ footer {
   }
 }
 
-@media all and (max-width: 750px) {
-  .top-wrapper h1 {
-    font-size: 32px;
-  }
-
-  .heading h2 {
-    font-size: 20px;
-  }
-}
-
-@media all and (max-width: 670px) {
-  .header-right {
-    display: none;
-  }
-
-  .menu-icon {
-    display: block;
-  }
-
-  .top-wrapper .btn {
-    width: 100%;
-  }
-
-  .twitter {
-    margin-top: 10px;
-  }
-
-  .top-wrapper {
-    text-align: left;
-  }
-
-  .top-wrapper h1 {
-    font-size: 24px;
-  }
-
-  .top-wrapper p {
-    font-size: 14px;
-  }
-
-  .lesson {
-    width: 100%;
-  }
-
-  .lesson-wrapper {
-    height: 1700px;
-  }
-
-  .message-wrapper .btn {
-    width: 100%;
-  }
-}
 
 /*電光掲示板*/
 .board {
