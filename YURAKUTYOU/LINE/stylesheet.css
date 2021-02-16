@@ -211,16 +211,30 @@ header {
 
 .contents-movie {
   display: inline-block;
+  float: left;
 }
 
 .contents-message {
-  float: right;
-  padding-right: 80px
+  float: left;
+  margin-left: 80px;
 }
 
 .contents h3 {
   font-size: 60px;
   margin-top: auto;
+}
+
+.contents p {
+  padding: 20px 0;
+  font-size: 20px;
+}
+
+.contents a {
+  text-decoration: underline;
+}
+
+.contents span {
+  font-weight: bold;
 }
 
 .lesson {
