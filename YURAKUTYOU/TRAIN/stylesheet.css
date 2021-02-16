@@ -213,15 +213,18 @@ header {
 }
 
 .contents-movie {
-  display: flex;
-  flex: auto;
-  width: auto;
-  height: auto;
+  text-align: left;
+  padding: 20px;
 }
 
-.contents-movie iframe {
-  width: 400px;
-  height: 250px;
+.contents-movie iframe{
+  width: 800px;
+  height: 450px;
+}
+
+.contents-message {
+  text-align: left;
+  padding-left: 80px;
 }
 
 .contents h3 {
@@ -245,12 +248,15 @@ header {
 
 .train-name {
   text-align: center;
+  font-weight: bold;
+  font-size: 24px;
   padding: 0;
   margin: 0;
 }
 
 .text-contents {
-  padding: 0;
+  text-align: left;
+  padding: 0 20px;
   margin: 0;
 }
 
