@@ -189,7 +189,7 @@ header {
 }
 
 .header-list {
-  margin-left: 70%;
+  margin-left: 540px;
 }
 
 .header-list ul:hover {
@@ -230,22 +230,6 @@ header {
 .contents h3 {
   font-size: 60px;
   margin-top: auto;
-}
-
-.lesson {
-  float: left;
-  width: 25%;
-}
-
-.lesson-icon {
-  position: relative;
-}
-
-.lesson-icon p {
-  position: absolute;
-  top: 37%;
-  width: 100%;
-  color: white;
 }
 
 .text-contents {
