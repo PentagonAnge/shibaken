@@ -231,8 +231,7 @@ header {
 }
 
 .contents a {
-  padding: 20px 80px;
-  display: block;
+  text-decoration: underline;
 }
 
 
