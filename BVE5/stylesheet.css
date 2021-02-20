@@ -205,6 +205,10 @@ header {
   font-size: 30px;
 }
 
+.contents {
+  width: 100%;
+}
+
 .contents p {
   padding: 20px 80px;
   font-size: 20px;
@@ -214,6 +218,10 @@ header {
   font-weight: bold;
 }
 
+.content {
+  width: 50%;
+  margin: 0 auto;
+}
 
 .text-contents {
   width: 80%;
@@ -242,6 +250,220 @@ header {
   box-shadow: none;
 }
 
+.slider{
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/*カルーセル*/
+
+.slider__content{
+  min-width: 100%;
+  animation: sliderAnime 50s ease-in-out infinite;
+}
+
+@keyframes sliderAnime{
+  0%{
+
+  }
+  2.5%{
+    transform: translateX(0);
+  }
+  5%{
+    transform: translateX(-100%);
+  }
+  7.5%{
+    transform: translateX(-100%);
+  }
+  10%{
+    transform: translateX(-200%);
+  }
+  12.5%{
+    transform: translateX(-200%);
+  }
+  15%{
+    transform: translateX(-300%);
+  }
+  17.5%{
+    transform: translateX(-300%);
+  }
+  20%{
+    transform: translateX(-400%);
+  }
+  22.5%{
+    transform: translateX(-400%);
+  }
+  25%{
+    transform: translateX(-500%);
+  }
+  27.5%{
+    transform: translateX(-500%);
+  }
+  30%{
+    transform: translateX(-600%);
+  }
+  32.5%{
+    transform: translateX(-600%);
+  }
+  35%{
+    transform: translateX(-700%);
+  }
+  37.5%{
+    transform: translateX(-700%);
+  }
+  40%{
+    transform: translateX(-800%);
+  }
+  42.5%{
+    transform: translateX(-800%);
+  }
+  45%{
+    transform: translateX(-900%);
+  }
+  47.5%{
+    transform: translateX(-900%);
+  }
+  50%{
+    transform: translateX(-1000%);
+  }
+  52.5%{
+    transform: translateX(-1000%);
+  }
+  55%{
+    transform: translateX(-1100%);
+  }
+  57.5%{
+    transform: translateX(-1100%);
+  }
+  60%{
+    transform: translateX(-1200%);
+  }
+  62.5%{
+    transform: translateX(-1200%);
+  }
+  65%{
+    transform: translateX(-1300%);
+  }
+  67.5%{
+    transform: translateX(-1300%);
+  }
+  70%{
+    transform: translateX(-1400%);
+  }
+  72.5%{
+    transform: translateX(-1400%);
+  }
+  75%{
+    transform: translateX(-1500%);
+  }
+  77.5%{
+    transform: translateX(-1500%);
+  }
+  80%{
+    transform: translateX(-1600%);
+  }
+  82.5%{
+    transform: translateX(-1600%);
+  }
+  85%{
+    transform: translateX(-1700%);
+  }
+  87.5%{
+    transform: translateX(-1700%);
+  }
+  90%{
+    transform: translateX(-1800%);
+  }
+  92.5%{
+    transform: translateX(-1800%);
+  }
+  100%{
+    transform: translateX(0);
+  }
+} 
+
+
+.slider2__content{
+  min-width: 100%;
+  animation: sliderAnime1 50s ease-in-out infinite;
+}
+
+@keyframes sliderAnime1{
+  0%{
+
+  }
+  5%{
+    transform: translateX(0);
+  }
+  10%{
+    transform: translateX(-100%);
+  }
+  15%{
+    transform: translateX(-100%);
+  }
+  20%{
+    transform: translateX(-200%);
+  }
+  25%{
+    transform: translateX(-200%);
+  }
+  30%{
+    transform: translateX(-300%);
+  }
+  35%{
+    transform: translateX(-300%);
+  }
+  40%{
+    transform: translateX(-400%);
+  }
+  45%{
+    transform: translateX(-400%);
+  }
+  50%{
+    transform: translateX(-500%);
+  }
+  55%{
+    transform: translateX(-500%);
+  }
+  60%{
+    transform: translateX(-600%);
+  }
+  65%{
+    transform: translateX(-600%);
+  }
+  70%{
+    transform: translateX(-700%);
+  }
+  75%{
+    transform: translateX(-700%);
+  }
+  80%{
+    transform: translateX(-800%);
+  }
+  85%{
+    transform: translateX(-800%);
+  }
+  90%{
+    transform: translateX(-900%);
+  }
+  95%{
+    transform: translateX(-900%);
+  }
+  100%{
+    transform: translateX(0);
+  }
+} 
+
+.slider__img{
+  max-width: 100%;
+  min-width: 100%;
+}
+
 footer p {
   font-size: 12px;
 }
@@ -267,6 +489,10 @@ footer {
 
 .clear {
   clear: left;
+}
+
+.clear1 {
+  width: 100%;
 }
 
 
