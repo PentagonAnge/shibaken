@@ -3,7 +3,7 @@
 }
 
 /*タブレット向けレイアウト*/
-@media (max-width: 1180px) {
+@media (max-width: 1300px) {
 
   .top-wrapper {
     width: 100%;
